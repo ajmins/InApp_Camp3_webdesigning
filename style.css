@@ -1,0 +1,58 @@
+p {
+    color:blue
+}
+/*type selector*/
+h1 {
+    color:violet
+}
+h3 {
+    width: 120px;
+    height: 30px;
+    padding: 20px;
+    /*
+    margin:30px;
+    border: 2px solid;*/
+    color:darkorchid
+}
+/*universal selector*/
+*{
+    color:rgb(168, 17, 50);
+}
+
+/*class selector*/
+.speclss {
+    color:chocolate
+}
+
+/*id selector*/
+#styling {
+    color:rgba(220, 20, 60, 0.411)
+}
+/*attrubute selector */
+input[type="button"]
+{
+    background-color: aquamarine;
+    color: #0000ff57;
+    width: 10%;
+}
+/*multiple selectore*/
+p,h1 {
+    color: rgb(136, 10, 104) !important;
+}
+/*Pseudo class selectors :hover, :active , :focus */
+a:hover{
+    outline: 2px dotted crimson;
+}
+p::first-letter {
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+}
+h1{
+    color: rgb(51, 7, 133);
+}
+h6{
+    color: #000;
+    background-color: aqua;
+    font-size: 2em;
+}
