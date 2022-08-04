@@ -1,0 +1,72 @@
+
+body{
+    background-color: rgba(187, 238, 69, 0.774);
+}
+#navigation{
+    position: relative;
+    top: 100;
+    left: 200;
+    width: 200px;
+    float: left;
+}
+#content{
+    background-color: rgba(0, 214, 114, 0.726);
+    margin-left:200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+
+}
+h1{
+    color:rgb(19, 126, 129)
+}
+#nav{
+    margin:30px;
+    border: 2px solid;
+    padding: 6px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#pic{
+    margin-left: 20px;
+    border: 2px solid;
+    padding: 5px;
+    width: min-content;
+    float: left;
+}
+#description{
+    margin-left: 20px;
+    padding-left: 20px;
+    text-align: justify;
+    float: left;
+    color: rgb(6, 11, 82);
+    
+}
+#id{
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(13, 80, 97);
+}
+#description1{
+    margin-left: 200px;
+    padding-left: 20px;
+    text-align: left;
+    float: left;
+    color: rgb(6, 11, 82);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#description2{
+    margin-left: 100px;
+    padding-left: 20px;
+    text-align: left;
+    float: left;
+    color: rgb(6, 11, 82);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: rgb(2, 63, 63);
+}
