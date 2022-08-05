@@ -306,11 +306,35 @@ var myallbtns = document.querySelectorAll('.btn');
 
 //get the value feom the html elements like in textbox (form elements)
 var mytxtname = document.getElementsByName('txtcustname')
-alert(mytxtname[0].value);
+//alert(mytxtname[0].value);
 
 //getting the innerHTML (using with div)
-alert(myheaderwithid.innerHTML);
+//alert(myheaderwithid.innerHTML);
 
 //JS events and calbacks : event driven JS
 //event occur when the page loads, when user interacts with page elements like clicks, hover, changes etc
 //JS can listen to the event and execute a 'callback' function.
+
+//method 1
+/*
+<button id="btn1" onclick="handleClick()" class="btn">Justbutton</button>
+
+var handleClick = function(event){
+    //getting the textbox value and printing it
+    alert(document.getElementById("mytxtbox").value);
+    //assigning a new vlaue to the textbox
+    document.getElementById("mytxtbox").value = "The new value"
+
+};
+*/
+//another method 2
+/*   <button id="btn1" class="btn">Justbutton</button> */
+var handleClick = function(event){
+    //getting the textbox value and printing it
+    alert(document.getElementById("mytxtbox").value);
+    //assigning a new vlaue to the textbox
+    document.getElementById("mytxtbox").value = "The new value";
+
+}
+var mybtn =  document.getElementById("btn1");
+mybtn.addEventListener('click',handleClick);
