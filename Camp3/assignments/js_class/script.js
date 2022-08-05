@@ -46,43 +46,74 @@ class Student {
             }
         }
     }
-    editStudent(){
-
+}
+var studList = [];
+    function addStudentToList(){
+        var p1 = new Student();
+        p1.addStudent();
+        studList.push(p1);
     }
-    deleteStudent(){
-
+    function editStudent(){ 
+            var sname = prompt("Enter the student name you want to change: ");
+            studList.forEach(student => {
+                if(sname === student.std_name){
+                    student.addStudent();
+                }
+                else{
+                    alert(" Name not found!")
+                }
+            });
     }
-    viewStudentDetails(){
-
+    function deleteStudent(){
+        var sname = prompt("Enter the student name you want to delete: ");
+        studList.forEach((student,id) => {
+            if(sname === student.std_name){
+                delete studList[id];
+                alert("Deleted successfully!")
+            }
+            else{
+                alert(" Name not found!")
+            }
+        });
     }
-    showStudent(){
+    function viewStudentDetails(){
+        studList.forEach(student => {
+            alert(`Name:  ${student.std_name} \nClass: " ${student.std_class} \nAge:  ${student.std_age} \nGender: " ${student.std_gender} \nLocation: " ${student.std_location}`);
 
+        })
     }
-    getUserDetails(){
+    function showStudent(){
+            var sname = prompt("Enter the student name you want to display the details: ");
+            studList.forEach(student => {
+                if(sname === student.std_name){
+                    alert(`Name:  ${student.std_name} \nClass: " ${student.std_class} \nAge:  ${student.std_age} \nGender: " ${student.std_gender} \nLocation: " ${student.std_location}`);
+                }
+                else{
+                    alert(" Name not found!")
+                }
+            });
+        
+    }
+    function getUserDetails(){
         while(1)
         {
-            var flag = true;
-            var ch = prompt("Enter your choice:\n1.Add Student \n2.Edit Student \n3.Delete Student \n4.View All Student \n5.Show details of a Student");
-            alert(ch);
+            var ch = prompt("Enter your choice:\n1.Add Student \n2.Edit Student \n3.Delete Student \n4.View All Student \n5.Show details of a Student").trim();
             switch(ch)
             {
-                case 1: this.addStudent();
+                case "1": addStudentToList()
                         break;
-                case 2: this.editStudent();
+                case "2": editStudent()
                         break;
-                case 3: Student.deleteStudent();
+                case "3": deleteStudent()
                         break;
-                case 4: Student.viewStudentDetails();
+                case "4": viewStudentDetails()
                         break;
-                case 5: Student.showStudent();
+                case "5": showStudent()
                         break;
-                default:alert("Invalid Input!");  
+                default:alert("Please enter a correct number!")
             }
         }
     }
-}
+getUserDetails()
 
 
-Student.getUserDetails()
-var p1 = new Student();
-p1.addstudent();

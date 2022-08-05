@@ -244,7 +244,7 @@ var addition_method = student.add;
 addition_method(1,4); //will print 5
 var talk_method = student.talk;
 talk(); //will not work
-*/
+
 
 //JS on OOPS, simulating OOPS, class syntax introduced in ES6 version
 class Person {
@@ -260,3 +260,57 @@ var tom = new Person('Tom', 34);
 tom.greet();
 var jerry = new Person('Jerry', 40);
 jerry.greet();
+
+//JSON Objects
+//Creating a JSON object using the stringify() method
+
+var jsonstring = JSON.stringify({
+    pName:"Ajmi",
+    pAge:22,
+    pAddress:{
+        district:"TVM",
+        location:"Technopark"
+    }
+});
+console.log(jsonstring)
+
+
+//Parsing the JSON string
+var parsedjson = JSON.parse(jsonstring)
+alert(parsedjson.pName)
+alert(parsedjson.pAge)
+alert(parsedjson.pAddress.district)
+alert(parsedjson.pAddress.location)
+*/
+//js dom 
+//selecting html elements using javascript
+var mypelements = document.getElementsByTagName('p');
+//alert(mypelements)
+var myh2withid = document.getElementById('myh2withid');
+//alert(myh2withid)
+var myh3withclass = document.getElementsByClassName('myh3withclass');
+//alert(myh3withclass)
+
+//css selectors based seletion (same syle of selection used in css)
+//if only one-> document.querySelector use "#"
+var myheaderwithid = document.querySelector('#header');
+//alert(myheaderwithid)
+//if set of elements -> document.querySelectorAll use "."
+var myallbtns = document.querySelectorAll('.btn');
+//alert(myallbtns)
+
+//fetching values/data inside the html element after selecting it.
+//getting the text content inside an element 
+//alert(mypelements[0].textContent) //hello
+//alert(mypelements[1].textContent) //world!
+
+//get the value feom the html elements like in textbox (form elements)
+var mytxtname = document.getElementsByName('txtcustname')
+alert(mytxtname[0].value);
+
+//getting the innerHTML (using with div)
+alert(myheaderwithid.innerHTML);
+
+//JS events and calbacks : event driven JS
+//event occur when the page loads, when user interacts with page elements like clicks, hover, changes etc
+//JS can listen to the event and execute a 'callback' function.
