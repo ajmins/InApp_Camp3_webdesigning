@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="main">Registration Form</h1>
+    </div>
+    <div class="content">
+        
+            <label for = "Pname">Full Name </label> <br> 
+            <input name = "Pname" type = "text" placeholder="Full Name" > 
+            <div class="space" id ='Pname'>
+                <p class="para">Enter full name.</p>
+            </div>
+            
+            
+            <label for="email">Email address </label> <br>
+            <input name = "email" type="email" placeholder="Email address">
+            <div class="space" id="email">
+            <p class="para">Enter your email address.</p>
+            </div>
+            
+            <label for = "phone">Phone(enter only 10 digit number) </label> <br>
+            <input name = "phone" type="tel" placeholder="Phone Number">
+            <div class="space" id="phone">
+            <p class="para">Enter a phone number</p>
+            </div>
+            
+            <label for="pswd">Password </label> <br>
+            <input name = "pswd" type="password" placeholder="Password">  
+            <div class="space" id="pswd">
+            <p class="para">Enter password</p>
+            </div>
+           
+            <label for="confirmpswd">Confirm Password </label> <br>
+            <input name = "confirmpswd" type="password" placeholder="Confirm Password"> 
+            <div class="space" id="confirmpswd">
+            <p class="para">Enter Password confirmation.</p>
+            </div>
+            <br><br>
+            <button name = "register" type="submit" value="Register" class="btn" onclick="formValidation()">Register</button>
+       
+    </div>
+</body>
+</html>

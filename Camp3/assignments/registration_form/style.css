@@ -1,0 +1,47 @@
+body{
+    height: 1000px;
+    background: linear-gradient(#ff00002c 0%, #e4f5ea 100%);  
+  }
+  .header{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 46%;
+    color: #c00362;
+    font-size: 1em;
+    margin-top: 3em;
+}
+.content{
+    margin-top: 5em;
+    margin-left: 40%;
+}
+label{
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type=text],[type=email],[type=tel], [type=password]   {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .btn {
+    transition-duration: 0.4s;
+    width: 20%;
+    height: 30px;
+    background-color: #c0036288;
+    border-color: transparent ;
+    margin-left: 15%;
+  }
+  
+  .btn:hover {
+    background-color: #12966aa4; /* Green */
+    color: white;
+  }
+  .space{
+    margin-top: -20px;
+    visibility: hidden;
+    color: red;
+  }
+
