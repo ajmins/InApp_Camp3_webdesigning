@@ -23,6 +23,8 @@ input[type=text],[type=email],[type=tel], [type=password]   {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border-radius: 5px;
+    border-style: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
