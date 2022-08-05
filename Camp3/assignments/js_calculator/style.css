@@ -16,26 +16,19 @@ body{
     padding: 50px;
     font-size: larger;
 }
-#one,#two,#three{
-
+#one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#zero,#decimal,#equal{
+    width: 221px;
+    margin-left: -60px;
 }
 #display{
     width: 30em;
     padding: 2.5em;
     font-size: larger;
-
 }
 .table{
     margin-top: 9em;
-    width: 700px;
-    height: 500px;
 }
 .btn:hover  
 {  
-background-color: rgba(233, 158, 199, 0.712);  
+    background-color: rgba(233, 158, 199, 0.712);  
 }  
-.tb{
-    height: 500px;
-    width: 750px;
-
-}
