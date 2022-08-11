@@ -35,3 +35,9 @@ import {MDCSwitch} from '@material/switch';
 for (const el of document.querySelectorAll('.mdc-switch')) {
   const switchControl = new MDCSwitch(el);
 }
+
+import {MDCTooltip} from '@material/tooltip';
+const tooltip = new MDCTooltip(document.querySelector('.mdc-tooltip'));
+import {MDCTabBar} from '@material/tab-bar';
+
+const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));

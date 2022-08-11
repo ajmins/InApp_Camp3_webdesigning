@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="bundle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Material Deisgn Demo</title>
     
 </head>
 <body>
@@ -25,6 +25,8 @@
     </section>
   </div>
 </header>
+
+
 <!--Side nav-->
 <div class="side" style="width: 10%;">
 <aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
@@ -62,9 +64,40 @@
 </div>
 <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
   <main class="main-content" id="main-content">
+<!--tabs-->
+  <div class="mdc-drawer__header">
+    <h3 class="mdc-drawer__title">Tab menu demo</h3>
+  </div>
+  <div class="mdc-tab-bar" role="tablist">
+    <div class="mdc-tab-scroller">
+      <div class="mdc-tab-scroller__scroll-area">
+        <div class="mdc-tab-scroller__scroll-content">
+          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+              <span class="mdc-tab__text-label">Favorites</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__icon material-icons" aria-hidden="true">home</span>
+              <span class="mdc-tab__text-label">Home</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!--data table-->
-
+<!--data table-->
     <div class="mdc-drawer__header">
       <h3 class="mdc-drawer__title">Data Table Demo</h3>
     </div>
@@ -90,7 +123,7 @@
             <tr class="mdc-data-table__row">
               <th class="mdc-data-table__cell" scope="row">Ice cream sandwich</th>
               <td class="mdc-data-table__cell mdc-data-table__cell--numeric">37</td>
-              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.33333333333</td>
+              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.33</td>
               <td class="mdc-data-table__cell">I like ice cream more</td>
             </tr>
             <tr class="mdc-data-table__row">
@@ -128,7 +161,9 @@
       <span class="mdc-image-list__label">Aurora</span>
     </div>
   </li>
+  
 </ul>
+
 <!--List-->
 <div class="mdc-drawer__header">
   <h3 class="mdc-drawer__title">Lists Demo</h3>
@@ -258,7 +293,12 @@
 </button>
 <label for="basic-switch">off/on</label>
 
-
+<!--tooltip-->
+<div id="tooltip-id" class="mdc-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">
+    lorem ipsum dolor
+  </div>
+</div>
 
 
 
