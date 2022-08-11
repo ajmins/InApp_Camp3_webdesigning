@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bundle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+  <!--Top nav-->
+<header class="mdc-top-app-bar" id="app-bar">
+  <div class="mdc-top-app-bar__row">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+      <span class="mdc-top-app-bar__title">Rich Media Gallery</span>
+    </section>
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
+      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+    </section>
+  </div>
+</header>
+<!--Side nav-->
+<div class="side" style="width: 10%;">
+<aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
+  <div class="mdc-drawer__header">
+    <h3 class="mdc-drawer__title">Google</h3>
+  </div>
+  <div class="mdc-drawer__content">
+    <div class="mdc-list">
+      <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+        <span class="mdc-list-item__ripple"></span>
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+        <span class="mdc-list-item__text">Home</span>
+      </a>
+      <br>
+      <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+        <span class="mdc-list-item__ripple"></span>
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">widgets</i>
+        <span class="mdc-list-item__text">Gallery</span>
+      </a>
+      <br>
+      <a class="mdc-list-item" href="#">
+        <span class="mdc-list-item__ripple"></span>
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_quilt</i>
+        <span class="mdc-list-item__text">Ad Types</span>
+      </a>
+      <br>
+      <a class="mdc-list-item" href="#">
+        <span class="mdc-list-item__ripple"></span>
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">newspaper</i>
+        <span class="mdc-list-item__text">News</span>
+      </a>
+    </div>
+  </div>
+</aside>
+</div>
+<div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+  <main class="main-content" id="main-content">
+
+    <!--data table-->
+
+    <div class="mdc-drawer__header">
+      <h3 class="mdc-drawer__title">Data Table Demo</h3>
+    </div>
+    <hr>
+    <div class="mdc-data-table">
+      <div class="mdc-data-table__table-container">
+        <table class="mdc-data-table__table" aria-label="Dessert calories">
+          <thead>
+            <tr class="mdc-data-table__header-row">
+              <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Dessert</th>
+              <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Carbs (g)</th>
+              <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Protein (g)</th>
+              <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Comments</th>
+            </tr>
+          </thead>
+          <tbody class="mdc-data-table__content">
+            <tr class="mdc-data-table__row">
+              <th class="mdc-data-table__cell" scope="row">Frozen yogurt</th>
+              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">24</td>
+              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.0</td>
+              <td class="mdc-data-table__cell">Super tasty</td>
+            </tr>
+            <tr class="mdc-data-table__row">
+              <th class="mdc-data-table__cell" scope="row">Ice cream sandwich</th>
+              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">37</td>
+              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.33333333333</td>
+              <td class="mdc-data-table__cell">I like ice cream more</td>
+            </tr>
+            <tr class="mdc-data-table__row">
+              <th class="mdc-data-table__cell" scope="row">Eclair</th>
+              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">24</td>
+              <td class="mdc-data-table__cell mdc-data-table__cell--numeric">6.0</td>
+              <td class="mdc-data-table__cell">New filing flavor</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr>
+    <br><br>
+   <!--Image list-->
+   <div class="mdc-drawer__header">
+    <h3 class="mdc-drawer__title">Image Lists Demo</h3>
+  </div>
+<ul class="mdc-image-list mdc-image-list--masonry my-masonry-image-list">
+  <li class="mdc-image-list__item">
+    <img class="mdc-image-list__image" src="img1.jpg">
+    <div class="mdc-image-list__supporting">
+      <span class="mdc-image-list__label">River</span>
+    </div>
+  </li>
+  <li class="mdc-image-list__item">
+    <img class="mdc-image-list__image" src="img2.jpg">
+    <div class="mdc-image-list__supporting">
+      <span class="mdc-image-list__label">Snow</span>
+    </div>
+  </li>
+  <li class="mdc-image-list__item">
+    <img class="mdc-image-list__image" src="img3.jpg">
+    <div class="mdc-image-list__supporting">
+      <span class="mdc-image-list__label">Aurora</span>
+    </div>
+  </li>
+</ul>
+<!--List-->
+<div class="mdc-drawer__header">
+  <h3 class="mdc-drawer__title">Lists Demo</h3>
+</div>
+<ul class="mdc-list">
+  <li class="mdc-list-item" tabindex="0">
+    <span class="mdc-list-item__ripple"></span>
+    <span class="mdc-list-item__text">Orange</span>
+  </li>
+  <li class="mdc-list-item">
+    <span class="mdc-list-item__ripple"></span>
+    <span class="mdc-list-item__text">Apple</span>
+  </li>
+  <li class="mdc-list-item">
+    <span class="mdc-list-item__ripple"></span>
+    <span class="mdc-list-item__text">Water Melon</span>
+  </li>
+</ul>
+<br>
+<!--list with radio button -->
+<div class="mdc-drawer__header">
+  <h3 class="mdc-drawer__title">Lists With Radio Button Demo</h3>
+</div>
+<p>Which is your favourite Colour?</p>
+<ul class="mdc-list" role="radiogroup">
+  <li class="mdc-list-item" role="radio" aria-checked="false">
+    <span class="mdc-list-item__ripple"></span>
+    <span class="mdc-list-item__graphic">
+      <div class="mdc-radio">
+        <input class="mdc-radio__native-control"
+              type="radio"
+              id="demo-list-radio-item-1"
+              name="demo-list-radio-item-group"
+              value="1">
+              <label class="mdc-list-item__text" for="demo-list-radio-item-1">Yellow</label>
+        <div class="mdc-radio__background">
+          <div class="mdc-radio__outer-circle"></div>
+          <div class="mdc-radio__inner-circle"></div>
+        </div>
+      </div>
+    </span>
+  </li>
+  <li class="mdc-list-item" role="radio" aria-checked="true" tabindex="0">
+    <span class="mdc-list-item__ripple"></span>
+    <span class="mdc-list-item__graphic">
+      <div class="mdc-radio">
+
+        <input class="mdc-radio__native-control"
+              type="radio"
+              id="demo-list-radio-item-2"
+              name="demo-list-radio-item-group"
+              value="2"
+              checked>
+              <label class="mdc-list-item__text" for="demo-list-radio-item-2">Red</label>
+        <div class="mdc-radio__background">
+          <div class="mdc-radio__outer-circle"></div>
+          <div class="mdc-radio__inner-circle"></div>
+        </div>
+      </div>
+    </span> 
+  </li>
+  <li class="mdc-list-item" role="radio" aria-checked="false">
+    <span class="mdc-list-item__ripple"></span>
+    <span class="mdc-list-item__graphic">
+      <div class="mdc-radio">
+        <input class="mdc-radio__native-control"
+              type="radio"
+              id="demo-list-radio-item-3"
+              name="demo-list-radio-item-group"
+              value="3">
+              <label class="mdc-list-item__text" for="demo-list-radio-item-3">Blue</label>
+        <div class="mdc-radio__background">
+          <div class="mdc-radio__outer-circle"></div>
+          <div class="mdc-radio__inner-circle"></div>
+        </div>
+      </div>
+    </span>
+  </li>
+</ul>
+<!--menu -->
+<div class="mdc-menu mdc-menu-surface" id="demo-menu">
+  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+    <li>
+      <ul class="mdc-menu__selection-group">
+        <li class="mdc-list-item" role="menuitem">
+          <span class="mdc-list-item__ripple"></span>
+          <span class="mdc-list-item__graphic mdc-menu__selection-group-icon">
+            ...
+          </span>
+          <span class="mdc-list-item__text">Single</span>
+        </li>
+        <li class="mdc-list-item" role="menuitem">
+          <span class="mdc-list-item__ripple"></span>
+          <span class="mdc-list-item__graphic mdc-menu__selection-group-icon">
+           ...
+          </span>
+          <span class="mdc-list-item__text">1.15</span>
+        </li>
+      </ul>
+    </li>
+    <li class="mdc-list-divider" role="separator"></li>
+    <li class="mdc-list-item" role="menuitem">
+      <span class="mdc-list-item__ripple"></span>
+      <span class="mdc-list-item__text">Add space before paragraph</span>
+    </li>
+  </ul>
+<!--banner-->
+
+<button id="basic-switch" class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false">
+  <div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track">
+    <div class="mdc-switch__handle">
+      <div class="mdc-switch__shadow">
+        <div class="mdc-elevation-overlay"></div>
+      </div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons">
+        <svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24">
+          <path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z" />
+        </svg>
+        <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24">
+          <path d="M20 13H4v-2h16v2z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</button>
+<label for="basic-switch">off/on</label>
+
+
+
+
+
+
+
+
+
+
+    <!--end main-->
+  </main>
+
+
+
+<!--button-->
+<div class="mdc-drawer__header">
+  <h3 class="mdc-drawer__title">Button Demo</h3>
+</div>
+<button class="foo-button mdc-button">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">Button</span>
+  </button>
+   
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bundle.js" async></script>
+</body>
+
+</html>
+

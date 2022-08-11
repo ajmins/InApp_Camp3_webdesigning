@@ -1,0 +1,51 @@
+@use '@material/button/mdc-button';
+@use '@material/button';
+@use "@material/icon-button";
+@use "@material/icon-button/styles";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/drawer";
+@use "@material/list";
+
+@use "@material/checkbox"; // Required only for data table with row selection.
+
+@use "@material/data-table/data-table";
+@use "@material/image-list";
+@use "@material/image-list/mdc-image-list";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/radio";
+@use "@material/form-field";
+
+@use "@material/banner";
+@use '@material/switch';
+
+@include form-field.core-styles;
+
+
+//@include list.core-styles;
+@include data-table.core-styles;
+@include data-table.theme-baseline;
+
+.my-masonry-image-list {
+    @include image-list.masonry-columns(5);
+    max-width: 1000px;
+  }
+  .my-banner {
+    @include banner.position-centered;
+  }
+
+.foo-button {
+    @include button.container-fill-color(darksalmon);
+}
+body {
+color: blue;
+display: flex;
+height: 100vh;
+}
+*{
+    margin: 0;
+}
+
+  
+

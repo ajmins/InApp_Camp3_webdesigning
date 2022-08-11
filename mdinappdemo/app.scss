@@ -1,0 +1,11 @@
+/* this file is not directly used, it used webpack.config.js */
+
+@use '@material/button/mdc-button';
+@use '@material/button';
+
+.foo-button {
+@include button.container-fill-color(darksalmon);
+}
+body{
+    color: rgb(255, 0, 0);
+}
